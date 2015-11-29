@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ipws</string>
+    <string name="ipws_name">家居植物自动浇灌系统</string>
+    <string name="seid">设备号：</string>
+    <string name="cb_seid">记住设备号</string>
+    <string name="cb_auto">自动绑定</string>
+    <string name="bind">绑定</string>
+    <string name="hum">湿度：</string>
+    <string name="temp">温度：</string>
+    <string name="beam">光照：</string>
+    <string name="wp">水泵状态：</string>
+    <string name="time">更新时间：</string>
+</resources>

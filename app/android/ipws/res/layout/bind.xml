@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#F2F2F2"
+        >
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip" >
+        <ImageButton
+                android:id="@+id/img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#000000"/>
+
+
+        <TextView
+                android:id="@+id/ipws"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_below="@id/img_btn"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="10dip"
+                android:layout_centerInParent="true"
+                android:text="@string/ipws_name"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+        <TextView
+                android:id="@+id/ipws_seid"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_below="@id/ipws"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="16dip"
+                android:gravity="bottom"
+                android:text="@string/seid"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        <EditText
+                android:id="@+id/ipws_seid_et"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_below="@+id/ipws_seid"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="10dip"
+                android:padding="4dip"
+                android:layout_marginTop="12dip"
+                android:maxLines="8"
+                android:maxLength="8"
+                android:scrollHorizontally="true"
+                android:background="@drawable/bg_edittext"
+                android:textColor="#000000"
+                android:hint="请输入..."/>
+
+        <CheckBox
+                android:id="@+id/cb_seid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ipws_seid_et"
+                android:layout_marginLeft="12dip"
+                style="@style/CustomCheckboxTheme"
+                android:paddingLeft="28dp"
+                android:text="@string/cb_seid"
+                android:layout_marginTop="10dip"
+                android:textColor="#000000" />
+
+        <CheckBox
+                android:id="@+id/cb_auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb_seid"
+                style="@style/CustomCheckboxTheme"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="12dip"
+                android:paddingLeft="28dp"
+                android:text="@string/cb_auto"
+                android:textColor="#000000" />
+        <Button
+                android:id="@+id/btn_bind"
+                android:layout_width="80dip"
+                android:layout_height="40dip"
+                android:layout_below="@+id/ipws_seid_et"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/cb_auto"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:text="@string/bind"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+
+
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
