@@ -4,15 +4,18 @@
 $mysql = new SaeMysql();
 
 if ($_GET[show_se]) {
+    //获取到设备号
     $seid = $_GET["seid"];
+    //查询此设备在数据库时间最近的数据
     $sql = "SELECT * FROM `getdata`   where seid='" . $seid . "'  order by  time  desc   LIMIT 1";
     $data = $mysql->getData($sql);
     if ($data == "") {
+        //无数据并返回到首页
         echo "<script>alert('无数据！');</script>";
         echo '<meta http-equiv="refresh" content="0;URL=http://ipws.sinaapp.com/getdata/index.php" />';
         exit();
     }
-    ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,6 +47,7 @@ if ($_GET[show_se]) {
   </body>
 </html>
 <?php } else {
+    //输入不存在的设备号
     echo "<script>alert('错误打开！');</script>";
     echo '<meta http-equiv="refresh" content="0;URL=http://ipws.sinaapp.com/getdata/index.php" />';
     exit();

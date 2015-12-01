@@ -25,6 +25,7 @@
     <form class="form-signin" action="../api/get/show.php?" method="get" id="form">
         <h2 class="form-signin-heading" style="text-align:center">输入设备号</h2>
         <input type="text" class="form-control" placeholder="设备号" name="seid" required autofocus>
+
         <p class="help-block">
             1. 设备号是你控制终端的唯一识别码；<br/>
             2. 只能查看控制终端的温湿度数据和控制状态。
